@@ -18,7 +18,7 @@ export function MapRoute(route: IRouteData) {
   return (
     <Route
       path={route.path}
-      component={Component}
+      component={() => <Component {...route} />}
     />
   );
 }

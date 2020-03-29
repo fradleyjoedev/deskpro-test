@@ -6,7 +6,7 @@ interface IProps {
   links: IRouteData[];
 }
 
-const setDocumentTitle = (title: string) => {
+const setDocumentTitle = (title: string): void => {
   document.title = title;
 }
 
