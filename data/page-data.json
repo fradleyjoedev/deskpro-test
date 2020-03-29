@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/page-a",
+    "linkTitle": "Page A",
+    "pageTitle": "Info about page a",
+    "pageDescription": "ipsum dolor sit amet..."
+  },
+  {
+    "path": "/page-b",
+    "linkTitle": "Page B",
+    "pageTitle": "Info about page b",
+    "pageDescription": "ipsum dolor sit amet..."
+  },
+  {
+    "path": "/page-c",
+    "linkTitle": "Page C",
+    "pageTitle": "Info about page c",
+    "pageDescription": "ipsum dolor sit amet..."
+  }
+ ]
