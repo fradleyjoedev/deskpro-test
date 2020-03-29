@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 const htmlPlugin = new HtmlWebPackPlugin({
   template: './src/index.html',
   filename: './index.html',
@@ -10,7 +11,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
   },
-  plugins: [htmlPlugin],
+  plugins: [htmlPlugin, new CopyPlugin([{ from: 'data', to: 'data' }])],
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
   },

@@ -1,18 +1,21 @@
 [
   {
     "path": "/page-a",
+    "component": "HtmlElement",
     "linkTitle": "Page A",
     "pageTitle": "Info about page a",
     "pageDescription": "ipsum dolor sit amet..."
   },
   {
     "path": "/page-b",
+    "component": "HtmlElement",
     "linkTitle": "Page B",
     "pageTitle": "Info about page b",
     "pageDescription": "ipsum dolor sit amet..."
   },
   {
     "path": "/page-c",
+    "component": "HtmlElement",
     "linkTitle": "Page C",
     "pageTitle": "Info about page c",
     "pageDescription": "ipsum dolor sit amet..."
