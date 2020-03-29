@@ -10,7 +10,12 @@
         "description": "ipsum dolor sit amet..."
       },
       {
-        "componentType": "TableElement"
+        "componentType": "TableElement",
+        "columns": [
+          { "heading": "Name", "data": ["Billy", "Joe", "Dave"]}, 
+          { "heading": "Email", "data": ["billy@mcgun.co.uk", "joe@hotmail.com", "dave@goodtimes.com"]},
+          { "heading": "Location", "data": ["Manchester", "Newcastle", "London"]}
+        ]
       }
     ]
   },

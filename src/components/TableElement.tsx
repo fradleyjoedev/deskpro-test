@@ -1,11 +1,19 @@
 import React from 'react';
-import { IHTMLElement } from '../interfaces/IHtmlElement';
+import { ITableElement } from '##/interfaces/ITableElement';
+import { ITableData } from '##/interfaces/ITableData';
 
-export const TableElement: React.FunctionComponent<IHTMLElement> = (data: IHTMLElement): JSX.Element => {
+export const TableElement: React.FunctionComponent<ITableElement> = (data: ITableElement): JSX.Element => {
   return (
-    <div>
-      THIS IS A TABLE
-    </div>
+    <>
+        {data.columns.map((tableData: ITableData, i: number) => {
+          return <ul>
+            <li key={i}>{tableData.heading}</li>
+            {tableData.data.map((dataItem: string, i: number) => {
+              return <li key={i}>{dataItem}</li>
+            })}
+          </ul>
+        })}
+    </>      
   );
 };
 
