@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import { NavBar } from './components/navbar';
+import { NavBar } from './components/Navbar';
 import { MapRoute } from './utils/MapRoute';
 import { IRouteData } from './interfaces/IRouteData';
 import {
@@ -25,7 +25,7 @@ const Index: React.FunctionComponent = (): JSX.Element => {
   return (
     <Router>
       <div>
-        <NavBar/>
+        <NavBar links={data} />
         <Switch>
           {data.map((route: IRouteData, i: number) => {
             return <MapRoute key={i} {...route} />

@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { IRouteData } from '../interfaces/IRouteData';
 
-export const NavBar: React.FunctionComponent = (): JSX.Element => {
+interface IProps {
+  links: IRouteData[];
+}
+
+export const NavBar: React.FunctionComponent<IProps> = ({links}): JSX.Element => {
   return (
     <ul>
-      <li>
-        <Link to="/page-a">Page A</Link>
-      </li>
-      <li>
-        <Link to="/page-b">Page B</Link>
-      </li>
+      {links.map((route: IRouteData, i: number) => {
+          return (<li>
+            <Link to={route.path}>{route.linkTitle}</Link>
+          </li>)
+      })}
     </ul>
   );
 };
