@@ -1,0 +1,9 @@
+.eslintcache
+.stylelintcache
+*.log
+*.pcss.d.ts
+/test/coverage/
+dist/
+node_modules/
+package-lock.json*
+.DS_Store

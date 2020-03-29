@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "paths": {
+      "##/*": ["src/*"] // webpack alias
+    },
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "**/node_modules/*",
+    "node_modules",
+    "dist",
+    "server",
+    "test",
+    "webpack.config.js"
+  ]
+}
