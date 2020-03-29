@@ -1,11 +1,11 @@
 import React from 'react';
-import { IRouteData } from '../interfaces/IRouteData';
+import { IHTMLElement } from '../interfaces/IHtmlElement';
 
-export const HtmlElement: React.FunctionComponent<IRouteData> = (data: IRouteData): JSX.Element => {
+export const HtmlElement: React.FunctionComponent<IHTMLElement> = (data: IHTMLElement): JSX.Element => {
   return (
     <div>
-      <h1>{data.pageTitle}</h1>
-      <p>{data.pageDescription}</p>
+      <h1>{data.title}</h1>
+      <p>{data.description}</p>
     </div>
   );
 };

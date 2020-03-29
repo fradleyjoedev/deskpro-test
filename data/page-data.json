@@ -1,23 +1,41 @@
 [
   {
     "path": "/page-a",
-    "component": "HtmlElement",
     "linkTitle": "Page A",
     "pageTitle": "Info about page a",
-    "pageDescription": "ipsum dolor sit amet..."
+    "items": [
+      {
+        "componentType": "HtmlElement",
+        "title": "Info about page a",
+        "description": "ipsum dolor sit amet..."
+      },
+      {
+        "componentType": "TableElement"
+      }
+    ]
   },
   {
     "path": "/page-b",
-    "component": "HtmlElement",
     "linkTitle": "Page B",
-    "pageTitle": "Info about page b",
-    "pageDescription": "ipsum dolor sit amet..."
+    "pageTitle": "Info about page a",
+    "items": [
+      {
+        "componentType": "HtmlElement",
+        "title": "Info about page b",
+        "description": "ipsum dolor sit amet..."
+      }
+    ]
   },
   {
     "path": "/page-c",
-    "component": "HtmlElement",
     "linkTitle": "Page C",
-    "pageTitle": "Info about page c",
-    "pageDescription": "ipsum dolor sit amet..."
+    "pageTitle": "Info about page a",
+    "items": [
+      {
+        "componentType": "HtmlElement",
+        "title": "Info about page c",
+        "description": "ipsum dolor sit amet..."
+      }
+    ]
   }
  ]

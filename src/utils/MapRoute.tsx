@@ -2,23 +2,31 @@ import React from 'react';
 import { Route } from "react-router-dom";
 import { HtmlElement } from '../components/HtmlElement';
 import { IRouteData } from '../interfaces/IRouteData';
+import { TableElement } from '../components/TableElement';
+import { IHTMLElement } from './../interfaces/IHtmlElement';
 
 interface IComponent {
   [key: string]: React.FunctionComponent<any>;
 }
 
-export function MapRoute(route: IRouteData) {
+export function MapRoute(route: IRouteData): any {
   // Creates a object to map string to the appropriate component
   const components: IComponent = {
     "HtmlElement": HtmlElement,
+    "TableElement": TableElement,
   };
 
-  const Component = components[route.component];
+  if(!route.items)
+    return null;
 
-  return (
-    <Route
-      path={route.path}
-      component={() => <Component {...route} />}
-    />
-  );
+  return (route.items.map((item: IHTMLElement, i: number) => {
+    const Component = components[item.componentType];
+    return  (
+      <Route
+        key={i}
+        path={route.path}
+        component={() => <Component {...item} />}
+      />
+    )
+  }));
 }

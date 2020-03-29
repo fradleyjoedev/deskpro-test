@@ -1,7 +1,10 @@
+
+import { IHTMLElement } from './IHtmlElement';
+import { ITableElement } from './ITableElement';
+
 export interface IRouteData {
   path: string;
-  component: string;
+  items: Array<IHTMLElement | ITableElement>;
   linkTitle: string;
   pageTitle: string;
-  pageDescription: string;
 }
