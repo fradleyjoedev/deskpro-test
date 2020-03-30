@@ -1,5 +1,5 @@
 import React from 'react';
-import { IHTMLElement } from '../interfaces/IHtmlElement';
+import { IHTMLElement } from '##/interfaces/IHtmlElement';
 
 export const HtmlElement: React.FunctionComponent<IHTMLElement> = (data: IHTMLElement): JSX.Element => {
   return (

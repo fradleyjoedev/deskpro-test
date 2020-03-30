@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import { NavBar } from './components/Navbar';
+import { NavBar } from './components/NavBar';
 import { MapRoute } from './utils/MapRoute';
 import { IRouteData } from './interfaces/IRouteData';
 import {

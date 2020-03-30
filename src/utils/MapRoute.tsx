@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from "react-router-dom";
 import { HtmlElement } from '../components/HtmlElement';
-import { IRouteData } from '../interfaces/IRouteData';
+import { IRouteData } from '##/interfaces/IRouteData';
 import { TableElement } from '../components/TableElement';
-import { IHTMLElement } from './../interfaces/IHtmlElement';
+import { IHTMLElement } from '##/interfaces/IHtmlElement';
 
 interface IComponent {
   [key: string]: React.FunctionComponent<any>;

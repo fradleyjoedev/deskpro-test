@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { IRouteData } from '../interfaces/IRouteData';
+import { IRouteData } from '##/interfaces/IRouteData';
 import './NavBar.scss';
 
 interface IProps {
