@@ -4,10 +4,8 @@ import axios from 'axios';
 import { NavBar } from './components/NavBar';
 import { MapRoute } from './utils/MapRoute';
 import { IRouteData } from './interfaces/IRouteData';
-import {
-  BrowserRouter as Router,
-  Switch,
-} from "react-router-dom";
+import { DATA_URL } from './constants';
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import './styles/index.scss';
 
 const Index: React.FunctionComponent = (): JSX.Element => {
@@ -16,7 +14,7 @@ const Index: React.FunctionComponent = (): JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        './data/page-data.json',
+        DATA_URL,
       );
       setData(result.data);
     };

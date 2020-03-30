@@ -4,9 +4,10 @@ import { HtmlElement } from '../components/HtmlElement';
 import { IRouteData } from '##/interfaces/IRouteData';
 import { TableElement } from '../components/TableElement';
 import { IHTMLElement } from '##/interfaces/IHtmlElement';
+import { ITableElement } from '##/interfaces/ITableElement';
 
 interface IComponent {
-  [key: string]: React.FunctionComponent<any>;
+  [key: string]: React.FunctionComponent<IHTMLElement | ITableElement>;
 }
 
 export function MapRoute(route: IRouteData): any {
@@ -20,8 +21,9 @@ export function MapRoute(route: IRouteData): any {
     return null;
 
   return (route.items.map((item: IHTMLElement, i: number) => {
-    const Component = components[item.componentType];
-    return  (
+    const Component: React.FunctionComponent<IHTMLElement | ITableElement> = components[item.componentType];
+    
+    return (
       <Route
         key={i}
         path={route.path}
