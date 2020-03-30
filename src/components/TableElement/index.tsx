@@ -5,16 +5,16 @@ import './TableElement.scss';
 
 export const TableElement: React.FunctionComponent<ITableElement> = (data: ITableElement): JSX.Element => {
   return (
-    <>
+    <div className="table spacing">
         {data.columns.map((tableData: ITableData, i: number) => {
-          return <ul key={i}>
-            <li>{tableData.heading}</li>
+          return <ul className="table__column" key={i}>
+            <li className="table__column--item">{tableData.heading}</li>
             {tableData.data.map((dataItem: string, i: number) => {
-              return <li key={i}>{dataItem}</li>
+              return <li key={i} className="table__column--item">{dataItem}</li>
             })}
           </ul>
         })}
-    </>      
+    </div>      
   );
 };
 
