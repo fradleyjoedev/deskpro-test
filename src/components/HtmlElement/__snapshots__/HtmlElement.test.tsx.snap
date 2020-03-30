@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for HtmlElement snapshot 1`] = `
+<div
+  className="spacing"
+>
+  <h1>
+    test
+  </h1>
+  <p>
+    test
+  </p>
+</div>
+`;
