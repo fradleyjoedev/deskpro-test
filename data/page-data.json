@@ -2,12 +2,12 @@
   {
     "path": "/page-a",
     "linkTitle": "Page A",
-    "pageTitle": "Info about page a",
+    "pageTitle": "Info about Page A",
     "items": [
       {
         "componentType": "HtmlElement",
-        "title": "Info about page a",
-        "description": "ipsum dolor sit amet..."
+        "title": "Info about Page A",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis nunc vitae quam lobortis, et mollis lorem commodo. In hac habitasse platea dictumst. Integer eget metus vitae felis sodales commodo a et tortor. Phasellus pulvinar tortor ac dui egestas ultricies. Ut ut pharetra metus. Duis imperdiet pulvinar pellentesque."
       },
       {
         "componentType": "TableElement",
@@ -22,24 +22,24 @@
   {
     "path": "/page-b",
     "linkTitle": "Page B",
-    "pageTitle": "Info about page a",
+    "pageTitle": "Info about Page B",
     "items": [
       {
         "componentType": "HtmlElement",
-        "title": "Info about page b",
-        "description": "ipsum dolor sit amet..."
+        "title": "Info about Page B",
+        "description": "Sed et mauris id metus posuere placerat sed in nulla. Curabitur congue a sapien a viverra. Aenean pharetra congue luctus. Proin tempus tempus risus id luctus. Pellentesque sed orci lacinia, eleifend lectus non, ultricies odio. Suspendisse id elit nibh. Vestibulum mollis quam id ex aliquet gravida pulvinar eget dolor."
       }
     ]
   },
   {
     "path": "/page-c",
     "linkTitle": "Page C",
-    "pageTitle": "Info about page a",
+    "pageTitle": "Info about Page C",
     "items": [
       {
         "componentType": "HtmlElement",
-        "title": "Info about page c",
-        "description": "ipsum dolor sit amet..."
+        "title": "Info about Page C",
+        "description": "Nullam eros diam, finibus sit amet nibh at, malesuada aliquet sem. Suspendisse rhoncus, velit quis volutpat aliquam, augue nunc tempor erat, vitae blandit leo felis et tortor."
       }
     ]
   }
