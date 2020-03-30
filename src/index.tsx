@@ -8,6 +8,7 @@ import {
   BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
+import './styles/index.scss';
 
 const Index: React.FunctionComponent = (): JSX.Element => {
   const [data, setData] = useState([]);
