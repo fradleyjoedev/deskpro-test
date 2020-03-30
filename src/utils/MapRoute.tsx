@@ -10,7 +10,7 @@ interface IComponent {
   [key: string]: React.FunctionComponent<IHTMLElement | ITableElement>;
 }
 
-export function MapRoute(route: IRouteData): any {
+export function MapRoute(route: IRouteData): JSX.Element {
   // Creates a object to map string to the appropriate component
   const components: IComponent = {
     "HtmlElement": HtmlElement,
@@ -20,15 +20,19 @@ export function MapRoute(route: IRouteData): any {
   if(!route.items)
     return null;
 
-  return (route.items.map((item: IHTMLElement, i: number) => {
-    const Component: React.FunctionComponent<IHTMLElement | ITableElement> = components[item.componentType];
-    
-    return (
-      <Route
-        key={i}
-        path={route.path}
-        component={() => <Component {...item} />}
-      />
-    )
-  }));
+  return (
+    <> 
+      {route.items.map((item: IHTMLElement, i: number) => {
+        const Component: React.FunctionComponent<IHTMLElement | ITableElement> = components[item.componentType];
+        
+        return (
+          <Route
+            key={i}
+            path={route.path}
+            component={() => <Component {...item} />}
+          />
+        )
+      })} 
+    </>
+  );
 }
