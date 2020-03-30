@@ -17,7 +17,7 @@ export function MapRoute(route: IRouteData): JSX.Element {
     "TableElement": TableElement,
   };
 
-  if(!route.items)
+  if(!route.items || route.items.length == 0)
     return null;
 
   return (
