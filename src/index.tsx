@@ -13,10 +13,16 @@ const Index: React.FunctionComponent = (): JSX.Element => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(
-        DATA_URL,
-      );
-      setData(result.data);
+      try {
+        const result = await axios(
+          DATA_URL,
+        );
+        setData(result.data);
+      } catch (err) {
+        // Proper error handling should be here. 
+        // Added console log for demo purposes.
+        console.log(err);
+      }
     };
     fetchData();
   }, []);
