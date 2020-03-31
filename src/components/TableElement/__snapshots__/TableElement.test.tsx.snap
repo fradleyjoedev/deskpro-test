@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for TableElement snapshot 1`] = `
+<div
+  className="table spacing"
+>
+  <ul
+    className="table__column"
+    key="0"
+  >
+    <li
+      className="table__column--item"
+    >
+      Name
+    </li>
+    <li
+      className="table__column--item"
+      key="0"
+    >
+      Billy
+    </li>
+    <li
+      className="table__column--item"
+      key="1"
+    >
+      Joe
+    </li>
+    <li
+      className="table__column--item"
+      key="2"
+    >
+      Dave
+    </li>
+  </ul>
+  <ul
+    className="table__column"
+    key="1"
+  >
+    <li
+      className="table__column--item"
+    >
+      Email
+    </li>
+    <li
+      className="table__column--item"
+      key="0"
+    >
+      billy@mcgun.co.uk
+    </li>
+    <li
+      className="table__column--item"
+      key="1"
+    >
+      joe@hotmail.com
+    </li>
+    <li
+      className="table__column--item"
+      key="2"
+    >
+      dave@gtimes.com
+    </li>
+  </ul>
+  <ul
+    className="table__column"
+    key="2"
+  >
+    <li
+      className="table__column--item"
+    >
+      Location
+    </li>
+    <li
+      className="table__column--item"
+      key="0"
+    >
+      Manchester
+    </li>
+    <li
+      className="table__column--item"
+      key="1"
+    >
+      Newcastle
+    </li>
+    <li
+      className="table__column--item"
+      key="2"
+    >
+      London
+    </li>
+  </ul>
+</div>
+`;

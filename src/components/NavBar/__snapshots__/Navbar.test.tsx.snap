@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test for NavBar snapshot 1`] = `
+<ul
+  className="navbar"
+>
+  <Link
+    key="0"
+    onClick={[Function]}
+    to="/page-a"
+  >
+    <li
+      className="navbar__item"
+    >
+      Page A
+    </li>
+  </Link>
+</ul>
+`;
