@@ -20,6 +20,10 @@
         font-size: 1em;
       }
 
+      &:nth-child(odd) {
+        background: $light-grey;
+      }
+
       &:first-child {
         background-color: $blue;
         color: $white;
