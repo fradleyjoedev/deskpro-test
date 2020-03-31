@@ -12,7 +12,13 @@
     height: 45px;
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    margin-right: 20px;
+    transition: 0.2s;
+    justify-content: center;
+
+    &:hover {
+      background-color: #2b81c0;
+    }
   }
 
   a {

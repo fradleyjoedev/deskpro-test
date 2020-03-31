@@ -13,7 +13,7 @@
         "componentType": "TableElement",
         "columns": [
           { "heading": "Name", "data": ["Billy", "Joe", "Dave"]}, 
-          { "heading": "Email", "data": ["billy@mcgun.co.uk", "joe@hotmail.com", "dave@goodtimes.com"]},
+          { "heading": "Email", "data": ["billy@mcgun.co.uk", "joe@hotmail.com", "dave@gtimes.com"]},
           { "heading": "Location", "data": ["Manchester", "Newcastle", "London"]}
         ]
       }

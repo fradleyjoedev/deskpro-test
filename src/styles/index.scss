@@ -1,12 +1,16 @@
 // Global styles used for all components
 body {
   font-family: 'Rubik', sans-serif;
-  font-size:100%;
+  font-size: 100%;
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 400px) {
     font-size: 150%;
+  }
+
+  @media screen and (min-width: 700px) {
+    font-size: 120%;
   }
 }
 
@@ -14,6 +18,14 @@ li {
   list-style-type: none;
 }
 
+p {
+  font-size: 0.8em;
+
+  @media screen and (min-width: 700px) {
+    font-size: 1em;
+  }
+}
+
 .spacing {
-  padding: 0 0.5em 0 0.5em;
+  padding: 0 4% 0 4%;
 }
