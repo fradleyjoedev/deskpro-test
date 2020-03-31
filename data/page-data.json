@@ -1,5 +1,18 @@
 [
   {
+    "path": "/",
+    "exact": true,
+    "linkTitle": "Home",
+    "pageTitle": "DeskPro",
+    "items": [
+      {
+        "componentType": "HtmlElement",
+        "title": "Welcome!",
+        "description": "This solution is made up of reusable components dictated by the data driven from the mock data API. Please click on the other pages in the nav to see other data from the API."
+      }
+    ]
+  },
+  {
     "path": "/page-a",
     "linkTitle": "Page A",
     "pageTitle": "Info about Page A",

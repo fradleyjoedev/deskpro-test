@@ -25,10 +25,11 @@ export function MapRoute(route: IRouteData): JSX.Element {
     <> 
       {route.items.map((item: IHTMLElement, i: number) => {
         const Component: React.FunctionComponent<IHTMLElement | ITableElement> = components[item.componentType];
-        
+
         return (
           <Route
             key={i}
+            exact={route.exact}
             path={route.path}
             component={() => <Component {...item} />}
           />
