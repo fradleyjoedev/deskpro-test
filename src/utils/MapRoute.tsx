@@ -12,6 +12,7 @@ interface IComponent {
 
 export function MapRoute(route: IRouteData): JSX.Element {
   // Creates a object to map string to the appropriate component
+  // from data
   const components: IComponent = {
     "HtmlElement": HtmlElement,
     "TableElement": TableElement,

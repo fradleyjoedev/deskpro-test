@@ -19,9 +19,7 @@ const Index: React.FunctionComponent = (): JSX.Element => {
         );
         setData(result.data);
       } catch (err) {
-        // Proper error handling should be here. 
-        // Added console log for demo purposes.
-        console.log(err);
+        new Error(err);
       }
     };
     fetchData();
